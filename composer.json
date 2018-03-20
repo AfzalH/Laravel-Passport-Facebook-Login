@@ -1,5 +1,5 @@
 {
-    "name": "AfzalH/laravel-passport-facebook-login",
+    "name": "afzalh/laravel-passport-facebook-login",
     "description": "Facebook Token Request Grant for Laravel Passport",
     "license": "MIT",
     "keywords": ["laravel", "lumen", "passport", "oauth", "grant"],

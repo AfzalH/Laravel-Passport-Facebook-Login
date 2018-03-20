@@ -4,7 +4,7 @@ Provides a new Laravel Passport Grant Client named `facebook_login`, allowing yo
 A new user will be created (and optionally assigned to an role - `$user->attachRole(ID)`) if the email address doesn't exist.
 
 ## Installation:
-Install with composer `composer require danjdewhurst/laravel-passport-facebook-login`. Use major version 1 for Passport 4 and below Laravel 5.6 compatibility.
+Install with composer `composer require afzalh/laravel-passport-facebook-login`. Use major version 1 for Passport 4 and below Laravel 5.6 compatibility.
 
 ### Versions:
 * Laravel 5.6 and Passport 5.0 only supported at this time
@@ -14,8 +14,8 @@ Install with composer `composer require danjdewhurst/laravel-passport-facebook-l
 * `"facebook/graph-sdk": "~5.6"`
 
 ## Setup:
-* Add `Danjdewhurst\PassportFacebookLogin\FacebookLoginGrantProvider::class` to your list of providers **after** `Laravel\Passport\PassportServiceProvider`.
-* Add `Danjdewhurst\PassportFacebookLogin\FacebookLoginTrait` Trait to your `User` model (or whatever model you have configured to work with Passport).
+* Add `AfzalH\PassportFacebookLogin\FacebookLoginGrantProvider::class` to your list of providers **after** `Laravel\Passport\PassportServiceProvider`.
+* Add `AfzalH\PassportFacebookLogin\FacebookLoginTrait` Trait to your `User` model (or whatever model you have configured to work with Passport).
 * Run `php artisan vendor:publish`, this will create a `config/facebook.php` file.
 * Enter your Facebook App details in your `.env` file: `FACEBOOK_APP_ID` and `FACEBOOK_APP_SECRET`.
 * Optional: To automatically attach a role (https://github.com/Zizaco/entrust) to new users, use the 'ATTACH_ROLE' env setting.

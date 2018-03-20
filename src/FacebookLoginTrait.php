@@ -54,7 +54,7 @@ trait FacebookLoginTrait
                 $email_column       = config('facebook.registration.email', 'email');
                 $password_column    = config('facebook.registration.password', 'password');
 
-                $user = $userModel::where($facebook_id_column, $fbUser['id'])->first();
+                $user = $userModel::where($email_column, $fbUser['email'])->first();
 
                 if (!$user) {
                     $user = new $userModel();

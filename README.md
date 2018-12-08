@@ -10,8 +10,8 @@ Install with composer `composer require afzalh/laravel-passport-facebook-login`.
 * Laravel 5.6 and Passport 5.0 only supported at this time
 
 ## Dependencies:
-* `"laravel/passport": "~5.0"`
-* `"facebook/graph-sdk": "~5.6"`
+* `"laravel/passport": "^5.0"`
+* `"facebook/graph-sdk": "^5.6"`
 
 ## Setup:
 * Add `AfzalH\PassportFacebookLogin\FacebookLoginGrantProvider::class` to your list of providers **after** `Laravel\Passport\PassportServiceProvider`.
